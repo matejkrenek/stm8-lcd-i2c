@@ -79,8 +79,8 @@ Project Link: [https://github.com/matejkrenek/stm8-toolchain](https://github.com
 <!-- LIMITATIONS -->
 ## Limitations
 
-- You have to run make file commands in git bash 😥
-### Supported microprocessors
+- Library is tested and supported just for uP listed in the table below
+
   | Supported microprocessors |
   | ------------------------- |
   | STM8S208                  |
