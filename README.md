@@ -38,7 +38,6 @@ Another option is to clone the repository to your project
 
  ```sh
  git clone https://github.com/matejkrenek/stm8-lcd-i2c.git lcd_i2c
-  
  ```
    
 ### Requirements
