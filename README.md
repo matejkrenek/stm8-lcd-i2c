@@ -44,6 +44,10 @@ Library uses delay functions, so you can use your own implementation of these or
 <!-- USAGE EXAMPLES -->
 ## Usage
  - Initializing LCD
+ - params:
+    - address of LCD
+    - number of columns
+    - number of rows
  ```c
  LCD_I2C_Init(0x27, 16, 2)
  ```
