@@ -44,12 +44,37 @@ Library uses delay functions, so you can use your own implementation of these or
 <!-- USAGE EXAMPLES -->
 ## Usage
  - Initializing LCD
- - params:
-    - address of LCD
-    - number of columns
-    - number of rows
+ - parameters:
+    - address - address of LCD
+    - columns - number of columns
+    - rows - number of rows
  ```c
- LCD_I2C_Init(0x27, 16, 2)
+ LCD_I2C_Init(0x27, 16, 2);
+ ```
+ - Set cursors on display
+ - parameters:
+    - columns - index of column (starting from 0)
+    - rows - index of row (starting from 0)
+ ```c
+ LCD_I2C_SetCursor(0, 1);
+ ```
+ - Print on display
+ - parameters:
+    - string - string of chars to be printed
+ ```c
+ LCD_I2C_Print("Hello World");
+ ```
+ - Turn on backlight
+ ```c
+ LCD_I2C_Backlight();
+ ```
+- Turn off backlight
+ ```c
+ LCD_I2C_NoBacklight();
+ ```
+- Clear display
+ ```c
+ LCD_I2C_Clear();
  ```
 
 <!-- CONTACT -->
