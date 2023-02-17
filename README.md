@@ -37,6 +37,7 @@ You can download [.zip file](/matejkrenek/stm8-lcd-i2c/archive/refs/heads/master
 Another option is to clone the repository to your project
 
  ```sh
+ git clone https://github.com/matejkrenek/stm8-lcd-i2c.git lcd_i2c
   
  ```
    
@@ -53,7 +54,7 @@ Library uses delay functions, so you can use your own implementation of these or
 
 Matěj Křenek - [mate23.krenek@gmail.com](mailto:mate23.krenek@gmail.com)
 
-Project Link: [https://github.com/matejkrenek/stm8-toolchain](https://github.com/matejkrenek/stm8-toolchain)
+Project Link: [https://github.com/matejkrenek/stm8-lcd-i2c](https://github.com/matejkrenek/stm8-lcd-i2c)
 
 <!-- LIMITATIONS -->
 ## Limitations
