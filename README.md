@@ -32,42 +32,21 @@
 <!-- INSTALLATION -->
 ## Installation
 
-Follow all the steps below for desired functionality of the toolchain.
+You can download [.zip file](/matejkrenek/stm8-lcd-i2c/archive/refs/heads/master.zip) of the library and implement lcd_i2c.h and lcd_i2c.c to you project.
 
-Disclaimer: the steps are described for windows because i suppose linux users are much smarter than windows users so they don't need to be guided XD
+Another option is to clone the repository to your project
 
+ ```sh
+  
+ ```
+   
 ### Requirements
 
-Before running the toolchain on your machine, some necessary tools need to be downloaded.
-
-You may have some of these tools already downloaded.
+Library uses delay functions, so you can use your own implementation of these or you can use [stm8-delay](https://github.com/matejkrenek/stm8-delay) library.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-- After any adjustment of config.js run:
 
-   ```sh
-   make update
-   ```
-   or
-   
-   ```sh
-   make install
-   ```
-- For libraries there is associated folder lib:
-
-   ```sh
-   |--app
-      |--inc
-      |--src
-   |--lib
-      |--SPL
-        |--inc
-        |--src
-      |--Your-Library
-        |--inc
-        |--src
-   ```
 
 <!-- CONTACT -->
 ## Contact
