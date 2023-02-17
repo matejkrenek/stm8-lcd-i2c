@@ -17,88 +17,39 @@
 <!-- TABLE OF CONTENTS -->
 ### Table of contents
   <li>
-    <a href="#about-the-toolchain">About The Toolchain</a>
+    <a href="#about-the-toolchain">About The Library</a>
   </li>
   <li>
-    <a href="#getting-started">Getting Started</a>
+    <a href="#installation">Installation</a>
     <ul>
-      <li><a href="#prerequisites">Prerequisites</a></li>
-      <li><a href="#installation">Installation</a></li>
+      <li><a href="#requirements">Requirements</a></li>
     </ul>
   </li>
   <li><a href="#usage">Usage</a></li>
-  <li><a href="#limitations">Limitations</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="#acknowledgments">Acknowledgments</a></li>
+  <li><a href="#limitations">Limitations</a></li>
 
 
 
-<!-- ABOUT THE TOOLCHAIN -->
-## About The Toolchain
+<!-- ABOUT THE LIBRARY -->
+## About The Library
 
 This toolchain is based on compilation with SDCC and programming the controller with STVP. This allows you to use all the features of C99 standard and use any programmer that is supported by STVP.
 
 In addition to this, unused functions are removed during compilation with the use of sdccrm.
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- INSTALLATION -->
+## Installation
 
 Follow all the steps below for desired functionality of the toolchain.
 
 Disclaimer: the steps are described for windows because i suppose linux users are much smarter than windows users so they don't need to be guided XD
 
-### Prerequisites
+### Requirements
 
 Before running the toolchain on your machine, some necessary tools need to be downloaded.
 
 You may have some of these tools already downloaded.
-
-#### Nodejs
-- Toolchain uses nodejs to handle more complex tasks (parsing json config, calculating the size of files, adjusting SPL library)
-- Download (download the LTS version): [nodejs.org](https://nodejs.org/en/)
-#### STVP
-- Programmer to flash the program to stm
-- STVP comes with STVD that is distributed by STM. There are some license stuffs so to be sure everything is working properly follow these guides: [www.elektromys.eu](http://www.elektromys.eu/clanky/stm8_2_stvd/clanek.html)
-#### SDCC
-- Compiler to compile the program
-- Download: [sdcc.sourceforge.net](https://sdcc.sourceforge.net/)
-#### Others
-   ```sh
-   choco install git make vscode mingw
-   ```
-### Installation
-
-Now when all necessary tools are downloaded you can run the toolchain on your machine. 
-
-1. Clone the repo
-
-   ```sh
-   git clone https://github.com/matejkrenek/stm8-toolchain.git {project_name}
-   ```
-2. Edit config.json according to you needs
-
-   ```json
-   {
-      "device": "STM8S103",
-      "flash": {
-          "stvp_path": "C:/Program Files (x86)/STMicroelectronics/st_toolset/stvp/",
-          "stlink": "ST-LINK",
-          "device": "STM8S103F3"
-      }
-   }
-   ```
-   #### Supported parameters
-    | Property        | Values                            |
-    | --------------- | --------------------------------- |
-    | "device"        | STM8S103, STM8S105, STM8S208      |
-    | "flash.stlink"  | Any programmer supported by STVP  |
-    | "flash.device"  | Any device supported by STVP      |
-    
-3. After editing config.json 
-
-   ```sh
-   make update
-   ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -126,20 +77,6 @@ Now when all necessary tools are downloaded you can run the toolchain on your ma
         |--inc
         |--src
    ```
-### Commands
-- make commands that you can use to trigger functions
-
-   ```sh
-   make {command}
-   ```
-  | Command         | Functionality                                                               |
-  | --------------- | --------------------------------------------------------------------------- |
-  | "install"       | It installs desired version of SPL library based on your configuration      |
-  | "update"        | Same as the install command                                                 |
-  | "clean"         | Removes build directory                                                     |
-  | "compile"       | Compiles the program                                                        |
-  | "flash"         | Uploads the program to stm                                                  |
-  | "run"           | Runs clean, compile, flash commands                                         |
 
 <!-- CONTACT -->
 ## Contact
@@ -152,12 +89,3 @@ Project Link: [https://github.com/matejkrenek/stm8-toolchain](https://github.com
 ## Limitations
 
 - You have to run make file commands in git bash 😥
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Apart from this toolchain I recommend any of these:
-* [Wykys stm8 tools](https://gitlab.com/wykys/stm8-tools)
-* [Marrek Nozka](https://github.com/spseol/STM8-deroboard-start)
-
-<p align="right">(<a href="#readme-top">Back to top</a>)</p>
