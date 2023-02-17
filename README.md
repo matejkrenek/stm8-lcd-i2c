@@ -17,9 +17,6 @@
 <!-- TABLE OF CONTENTS -->
 ### Table of contents
   <li>
-    <a href="#about-the-toolchain">About The Library</a>
-  </li>
-  <li>
     <a href="#installation">Installation</a>
     <ul>
       <li><a href="#requirements">Requirements</a></li>
