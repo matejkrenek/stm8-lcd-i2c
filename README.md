@@ -29,15 +29,6 @@
   <li><a href="#contact">Contact</a></li>
   <li><a href="#limitations">Limitations</a></li>
 
-
-
-<!-- ABOUT THE LIBRARY -->
-## About The Library
-
-This toolchain is based on compilation with SDCC and programming the controller with STVP. This allows you to use all the features of C99 standard and use any programmer that is supported by STVP.
-
-In addition to this, unused functions are removed during compilation with the use of sdccrm.
-
 <!-- INSTALLATION -->
 ## Installation
 
@@ -89,3 +80,9 @@ Project Link: [https://github.com/matejkrenek/stm8-toolchain](https://github.com
 ## Limitations
 
 - You have to run make file commands in git bash 😥
+### Supported microprocessors
+  | Supported microprocessors |
+  | ------------------------- |
+  | STM8S208                  |
+  | STM8S105                  |
+  | STM8S103                  |
