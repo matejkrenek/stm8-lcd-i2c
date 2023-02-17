@@ -43,7 +43,10 @@ Library uses delay functions, so you can use your own implementation of these or
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+ - Initializing LCD
+ ```c
+ LCD_I2C_Init(0x27, 16, 2)
+ ```
 
 <!-- CONTACT -->
 ## Contact
