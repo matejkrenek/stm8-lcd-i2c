@@ -87,7 +87,7 @@ Project Link: [https://github.com/matejkrenek/stm8-lcd-i2c](https://github.com/m
 <!-- LIMITATIONS -->
 ## Limitations
 
-- Library is tested and supported just for uP listed in the table below
+- Library is tested and fully supported just for uP listed in the table below
 
   | Supported microprocessors |
   | ------------------------- |
